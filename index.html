@@ -11,11 +11,17 @@
   <meta name="description"
     content="Skilled and passionate web developer, I possess a solid foundation in HTML, CSS, and JavaScript, and excel at problem-solving, clear communication, and collaboration with stakeholders." />
 
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+
   <link rel="shortcut icon" href="./assets/favicon/web-developer-svgrepo-com.svg" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/utilities.css" />
+
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
 </head>
 
 <body>
@@ -69,8 +75,45 @@
         </p>
       </div>
       <a href="#contact" class="btn btn-secondary">Connect With Me</a>
+      <div class="division"></div>
     </section>
+
   </header>
+
+
+  <section class="techIcons container">
+    
+    <div>
+
+      <i class="devIcon devicon-html5-plain"></i>
+
+    </div>
+    <div>
+
+      <i class="devIcon devicon-css3-plain"></i>
+
+    </div>
+    <div>
+
+      <i class="devIcon devicon-bootstrap-plain"></i>
+
+    </div>
+    <div>
+
+      <i class="devIcon devicon-javascript-plain"></i>
+
+    </div>
+    <div>
+
+      <i class="devIcon devicon-react-original"></i>
+
+    </div>
+    <div>
+
+      <i class="devIcon devicon-nextjs-original"></i>
+
+    </div>
+  </section>
 
   <!-- Projects -->
   <section id="projects" class="project-container container">
@@ -165,17 +208,63 @@
           </div>
         </div>
       </div>
+    </article>
   </section>
-  </article>
+
 
   <!-- Contact Form -->
-  <section id="contact" class="form">
-    <div class="contact-form">
-      <div class="content">
-        <div class="left-side">
-          <div class="phone details">
-            <i class="fas fa-phone-alt"></i>
-            <div class="topic">Phone</div>
+  <section id="contact" class="form container">
+  <div class="contact-form">
+    <div class="content">
+      <div class="left-side">
+        <div class="phone details">
+          <i class="fas fa-phone-alt"></i>
+          <div class="topic">Phone</div>
+           <div class="text-one">+351 916 742 800</div>
+         </div>
+         <div class="email details">
+           <i class="fas fa-envelope"></i>
+           <div class="topic">Email</div>
+           <div class="text-one">freitas.ma.1993@gmail.com</div>
+         </div>
+       </div>
+       <div class="right-side">
+         <div class="topic-text">Send me a message</div>
+         <p>Feel free to reach out to me via email for any further information, quotes, or work proposals you may need.
+         </p>
+  <form id="form">
+    <div class="field input-box">
+      <label type="hidden" for="from_name"></label>
+      <input type="text" name="Name" id="from_name" placeholder="Name" required>
+    </div>
+      <div class="field input-box">
+      <label type="hidden" for="reply_to"></label>
+      <input type="text" name="Email" id="reply_to" placeholder="Email" required>
+    </div>
+    <div class="field">
+      <input type="hidden" name="to_name" id="to_name" value="Marcos Freitas" required >
+    </div>
+    <div class=" field input-box message-box">
+      <label type="hidden" for="message"></label>
+      <textarea class="input-box message-box" type="text" name="message" id="message" placeholder="Message" required></textarea>
+    </div>
+  <div class="button"> 
+    <input type="submit" id="button" value="Send Email" class="button" >
+  </div>
+  </form>
+</div>
+</div>
+</div>
+</section>
+  
+
+ <!-- <section id="contact" class="form container">
+   <div class="contact-form">
+     <div class="content">
+       <div class="left-side">
+         <div class="phone details">
+           <i class="fas fa-phone-alt"></i>
+           <div class="topic">Phone</div>
             <div class="text-one">+351 916 742 800</div>
           </div>
           <div class="email details">
@@ -186,7 +275,8 @@
         </div>
         <div class="right-side">
           <div class="topic-text">Send me a message</div>
-          <p>Feel free to reach out to me via email for any further information, quotes, or work proposals you may need.</p>
+          <p>Feel free to reach out to me via email for any further information, quotes, or work proposals you may need.
+          </p>
           <form action="#">
             <div class="input-box">
               <input type="text" placeholder="Enter your name">
@@ -204,7 +294,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <section class="footer">
     <footer id="footer">
@@ -213,8 +303,10 @@
         <!-- Social links -->
         <div class="social">
 
-          <a href="https://www.linkedin.com/in/freitas-marcos/" target="_blank"><img src="./assets/linkedin-icon.svg" alt="Linkedin" /></a>
-          <a href="https://github.com/Freitas-MA" target="_blank"><img src="./assets/github-icon.svg" alt="GitHub" /></a>
+          <a href="https://www.linkedin.com/in/freitas-marcos/" target="_blank"><img src="./assets/linkedin-icon.svg"
+              alt="Linkedin" /></a>
+          <a href="https://github.com/Freitas-MA" target="_blank"><img src="./assets/github-icon.svg"
+              alt="GitHub" /></a>
 
         </div>
 
@@ -226,6 +318,12 @@
     </footer>
   </section>
   <script src="js/script.js"></script>
+  <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  
+  <script type="text/javascript">
+    emailjs.init('7gWXP-x0bIE2F4Bkr')
+  </script>
 </body>
 
 </html>
