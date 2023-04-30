@@ -78,13 +78,14 @@ document.getElementById('form')
 
    btn.value = 'Sending...';
 
-   const serviceID = 'default_service';
+   const serviceID = 'service_l83oewq';
    const templateID = 'template_s98aedq';
 
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
       btn.value = 'Send Email';
       alert('Sent!');
+      document.getElementById("form").reset();
     }, (err) => {
       btn.value = 'Send Email';
       alert(JSON.stringify(err));
